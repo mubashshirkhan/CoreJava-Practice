@@ -1,0 +1,49 @@
+class Example 
+{
+	int x = m1();
+	int m1(){
+		System.out.println("NSV1 is exe");
+		return 10;
+	}
+	{
+		System.out.println("NSB1 is exe");
+	}
+	Example(){
+		System.out.println("NPC is exe");
+	}
+	Example(String s){
+		System.out.println("SPC is exe");
+	}
+	{
+		System.out.println("NSB is exe");
+	}
+	int y = m2();
+	
+	int m2(){
+		System.out.println("NSV2 is exe");
+		return 20;
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		System.out.println("MM execution starts..");
+		Example t1 = new Example();
+		Example t2 = new Example("Mubashshir ");
+		System.out.println("MM excutions ends..");
+	}
+	
+	int z = m3();
+	
+	int m3(){
+		System.out.println("NSV3 is executed");
+		return 30;
+	}
+	{
+		System.out.println("NSB3 is executed");
+	}
+	void m4(){
+		System.out.println("NSM is excuted");
+	}
+
+}

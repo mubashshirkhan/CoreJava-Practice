@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class readNumname 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scn =  new Scanner(System.in);
+		
+		System.out.print("Enter Number: ");
+		int num = scn.nextInt();
+		System.out.print("Enter Name: ");
+		String name = scn.next();
+		
+		System.out.println();
+		
+		System.out.println("Number is: "+num);
+		System.out.println("Name is:"+name);
+	}
+}

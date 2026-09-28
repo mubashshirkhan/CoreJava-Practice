@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class College
+{
+	public static void main(String[] args) 
+	{
+		Student s1			= new Student();
+		Scanner scn			= new Scanner(System.in);
+		
+		System.out.println("-----Enter Student Details-----\n");
+		System.out.printf("%-20s: ","sno");
+		s1.sno = scn.nextInt();
+		System.out.printf("%-20s: ","sname");
+		s1.sname = scn.next();
+		System.out.printf("%-20s: ","course");
+		s1.course = scn.next();
+		System.out.printf("%-20s: ","fee");
+		s1.fee = scn.nextDouble();
+		System.out.printf("%-20s: ","email");
+		s1.email= scn.next();  
+		System.out.printf("%-20s: ","mobile");
+		s1.mobile = scn.nextLong();
+		System.out.printf("%-20s: ","gender");
+		s1.gender = scn.next().charAt(0);
+		System.out.printf("%-20s: \n","status");
+		s1.studyingStatus = scn.nextBoolean();
+		
+		System.out.printf("\n %-20s: %s"	,"Sno",s1.sno);
+		System.out.printf("\n %-20s: %s"	,"Name",s1.sname);
+		System.out.printf("\n %-20s: %s"	,"Course",s1.course);
+		System.out.printf("\n %-20s: %d"	,"Mobile",s1.mobile);
+		System.out.printf("\n %-20s: %f"	,"Fee",s1.fee);
+		System.out.printf("\n %-20s: %s"	,"Email",s1.email);
+		System.out.printf("\n %-20s: %c"	,"Gender",s1.gender);
+		System.out.printf("\n %-20s: %b\n"	,"Status",s1.studyingStatus);
+	}
+}

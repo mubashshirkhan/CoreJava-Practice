@@ -1,0 +1,11 @@
+class DuplicateVariable 
+{
+	static int a = 10;
+	//static int a = 20;
+		  //int a = 30;
+		//String a = "a";
+		
+	void m1(){
+		int a = 50;
+	}
+}

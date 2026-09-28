@@ -1,0 +1,55 @@
+class CollegeAdv
+{
+	static Student HK(){
+		Student s1 = new Student();
+		s1.sno				= 101;
+		s1.sname			= "MK";
+		s1.course			= "fsjd";
+		s1.fee				= 2000;
+		s1.email			= "mk@gmail";
+		s1.mobile			= 787878871L;
+		s1.gender			= 'M';
+		s1.studyingStatus	= true;
+		
+		return s1;
+	}
+	static Student BK(){
+		
+		Student s1 = new Student();
+		s1.sno				= 101;
+		s1.sname			= "AK";
+		s1.course			= "fspd";
+		s1.fee				= 2000;
+		s1.email			= "ak@gmail";
+		s1.mobile			= 878790909L;
+		s1.gender			= 'M';
+		s1.studyingStatus	= true;
+	}
+}
+class  University
+{
+	public static void main(String[] args) 
+	{
+		Student s2 = CollegeAdv.HK();
+		 
+		System.out.printf("\n %-20s: %s"	,"Sno",s2.sno);
+		System.out.printf("\n %-20s: %s"	,"Name",s2.sname);
+		System.out.printf("\n %-20s: %s"	,"Course",s2.course);
+		System.out.printf("\n %-20s: %d"	,"Mobile",s2.mobile);
+		System.out.printf("\n %-20s: %f"	,"Fee",s2.fee);
+		System.out.printf("\n %-20s: %s"	,"Email",s2.email);
+		System.out.printf("\n %-20s: %c"	,"Gender",s2.gender);
+		System.out.printf("\n %-20s: %b\n"	,"Status",s2.studyingStatus);
+		
+		Student s3 = CollegeAdv.BK();
+		
+		System.out.printf("\n %-20s: %s"	,"Sno",s3.sno);
+		System.out.printf("\n %-20s: %s"	,"Name",s3.sname);
+		System.out.printf("\n %-20s: %s"	,"Course",s3.course);
+		System.out.printf("\n %-20s: %d"	,"Mobile",s3.mobile);
+		System.out.printf("\n %-20s: %f"	,"Fee",s3.fee);
+		System.out.printf("\n %-20s: %s"	,"Email",s3.email);
+		System.out.printf("\n %-20s: %c"	,"Gender",s3.gender);
+		System.out.printf("\n %-20s: %b\n"	,"Status",s3.studyingStatus);
+	}
+}

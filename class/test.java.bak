@@ -1,0 +1,23 @@
+class  MethodParamsWithIO
+{
+	private static int a;
+	
+	static void m1(){
+		System.out.printf("the value before and after user input %d%n",a);
+	}
+	
+	static void m2(int a){
+		
+		MethodParamsWithIO.a = a;
+	}
+}
+
+class test
+{
+	public static void main(String[] args) 
+	{	
+		MethodParamsWithIO.m1();
+		MethodParamsWithIO.m2(Integer.parseInt(IO.readln("Enter a number: ")));
+		MethodParamsWithIO.m1();
+	} 
+}

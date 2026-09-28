@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class  Example{
+	static int x;
+	static int y;
+	
+	static{
+		Scanner scn = new Scanner(System.in);
+		System.out.print("Enter thevalue for variable 'x': ");
+		Example.x = scn.nextInt();
+		System.out.print("Enter thevalue for variable 'y': ");
+		Example.y = scn.nextInt();
+		scn.close();
+	}
+	
+
+
+	public static void main(String[] args) 
+	{
+		System.out.printf("Value for 'x' is %d and for 'y' is %d%n",Example.x,Example.y);
+	}
+}
+  

@@ -1,0 +1,24 @@
+class loginCmnToAllCons 
+{
+	
+	{
+		System.out.print("Hello!");
+	}
+	
+	loginCmnToAllCons(){
+		System.out.println("NPC");
+	}
+	loginCmnToAllCons(int a){
+		System.out.println("IPC");
+	}
+	loginCmnToAllCons(String a){
+		System.out.println("SPC");
+	}
+	
+	public static void main(String[] args) 
+	{
+		loginCmnToAllCons e1 = new loginCmnToAllCons();
+		loginCmnToAllCons e2 = new loginCmnToAllCons(33);
+		loginCmnToAllCons e3 = new loginCmnToAllCons("Mubashshir");
+	}
+}

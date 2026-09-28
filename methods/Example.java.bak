@@ -1,0 +1,32 @@
+class Example
+{
+	int x;	
+	int y;
+	
+	Example(){
+		x = 8;
+		y = 10;
+	}
+	Example(int x, int y){
+		this.x = x;
+		this.y = y;
+	}
+	Example(Example e){
+		this.x = e.x;
+		this.y = e.y;
+	}
+	public void display(){
+		System.out.println(x + " " + y);
+	}
+}
+
+class  TestingCopyConstructor
+{
+	public static void main(String[] args) 
+	{
+		Example e1 = new Example();//we added default constructor cuz we cant call 
+		//copy constructor without sending object as paremeter and for creating object we need
+		//default or param constructor
+		e1.display();
+	}
+}
