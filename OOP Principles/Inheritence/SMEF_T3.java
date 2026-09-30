@@ -5,7 +5,7 @@ class  A
 	static {
 		System.out.println("IN A SB");
 		System.out.println("a:"+a);
-		System.out.println("b:"+b);  //error
+		//System.out.println("b:"+b);  //error
 		System.out.println("b:"+B.b);
 		System.out.println("b:"+B.getB());
 	}
