@@ -6,29 +6,44 @@ class A
 }
 class B extends A
 {
+	
 	void m2(){
 		System.out.println("B m2");
 	}
 }
-class  Test
+class C extends B
 {
-	public static void main(String[] args) 
-	{
-		m3(new A());
-		m3(new B());
-	}
-	static void m3(A a1){
-		a1.m1();
-		//a1.m2(); error variable a1 of type A, so it cant acces B members
-		
-		//B b1 =(B)a1; //java.lang.ClassCastException: class A cannot be cast to class B.
-		//b1.m2();
-		
-		if(a1 instanceof B){
-			B b1 = (B) a1;
-			b1.m2();
-		}
+	void m3(){
+		System.out.println("C m3");
 	}
 }
 
 
+class UpandDowncast
+{
+	public static void main(String[]args){
+		
+		A a = new B();//upcasted cuz by ref var a object of B cls is created
+		B b = new C();//checks if C is subclass of B typecast it then
+		C c = new C();//No casting
+		
+		//using a ref
+		a.m1();
+		//a.m2();
+		//a.m3();
+		
+		
+		//using b ref
+		b.m1();
+		b.m2();
+		//b.m3();
+		
+		//using b ref
+		c.m1();
+		c.m2();
+		c.m3();
+		
+		
+		
+	}
+}
