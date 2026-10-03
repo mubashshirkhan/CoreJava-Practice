@@ -1,0 +1,88 @@
+class A {
+    
+    // Superclass members
+    static int x = 10;
+    int y = 20;
+
+    static void m1() {
+        System.out.println("A static m1()");
+    }
+
+    void m2() {
+        System.out.println("A non-static m2()");
+    }
+}
+
+
+class B extends A {
+
+    // Non-static method of subclass
+    void test() {
+
+        // 1. Direct access
+        System.out.println(x);  // static variable
+        System.out.println(y);  // non-static variable
+
+        m1();                   // static method
+        m2();                   // non-static method
+
+
+        // 2. Using superclass name
+        System.out.println(A.x); // static variable
+        A.m1();                  // static method
+
+        // A.y;                 // ❌
+        // A.m2();              // ❌
+
+
+        // 3. Using object/reference
+        A a = new A();
+
+        System.out.println(a.x); // static ✅
+        System.out.println(a.y); // non-static ✅
+
+        a.m1();                  // static ✅
+        a.m2();                  // non-static ✅
+
+
+        // 4. Using super
+        System.out.println(super.y); // non-static variable
+        super.m2();                  // non-static method
+
+        // super.x;      // ❌ Don't use super for static
+        // super.m1();   // ❌ Don't use super for static
+    }
+}
+
+
+public class Test2 {
+
+    public static void main(String[] args) {
+
+        // Object of subclass
+        B b = new B();
+
+        // Access inherited members using object
+        System.out.println(b.x); // static variable
+        System.out.println(b.y); // non-static variable
+
+        b.m1();                  // static method
+        b.m2();                  // non-static method
+
+
+        // Access static members using superclass name
+        System.out.println(A.x);
+        A.m1();
+
+
+        // Access non-static members using object
+        A a = new A();
+
+        System.out.println(a.y);
+        a.m2();
+
+
+        // Call subclass method
+        b.test();
+    }
+}
