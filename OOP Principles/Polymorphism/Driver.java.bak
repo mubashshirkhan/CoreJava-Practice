@@ -59,7 +59,7 @@ class Driver
 {
 	public static void main(String[] args) 
 	{
-		Functio f1 = new Functio();
+		Function f1 = new Function();
 		
 		f1.run(new Car());
 		f1.run(new Bike());
