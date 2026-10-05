@@ -1,0 +1,84 @@
+class Shape {
+     void findArea() {
+          System.out.println("Shape area");
+     }
+}
+
+//Rectangle.java (sub class 1)
+class Rectangle extends Shape {  //Inheritance
+
+     private double l;		//Encapuslation	
+     private double b;
+
+     public Rectangle(double l, double b){
+            this.l = l;
+	    this.b = b;
+     }
+
+     @Override	
+     void findArea(){   //Polymorphsim (overriding)
+			//overrding with Reactangle implementation	
+         System.out.println("Rectangle Area: " +(l * b));
+     }
+}
+
+//Square.java (sub class 3)
+class Square extends Shape {
+      private double s;
+     
+      public Square(double s){
+           this.s = s;
+      }
+
+      @Override	
+      void findArea() {//overriding with Square implementation
+            System.out.println("Square area: "+ (s*s));
+      }
+}
+
+//Circle.java (sub class 3)
+class Circle extends Shape {
+
+      private static final double PI = 3.14;
+      private double r;
+
+      public Circle(double r) {
+          this.r = r;
+      }
+      
+      @Override 	
+      void findArea() {//overriding with Cicle implementation
+            System.out.println("Circle area: "+ (PI * r * r));
+      }
+}
+
+//Painter.java
+class Painter { //User class
+   public static void main(String[] args ) {
+ 
+      
+       Shape s;
+
+       s = new Rectangle(10, 5);	//Loose Coupling
+       s.findArea();			//Runtime Polymorphsinm
+					//executed from Rectangle class	
+       s = new Square(10);
+       s.findArea();			//RP - executed from Square class
+
+       s = new Circle(10);	
+       s.findArea();			//RP - executed from Rectangle class
+ 
+     //LC and RP with method parameter
+     //In projects we will develop LC and RP by using method parameter
+	Painter hk = new Painter();
+	hk.draw(new Rectangle(10,5);
+	hk.draw(new Square(10);
+	hk.draw(new Circle(10);
+
+   }
+
+   void draw(Shape s){  //LC- any of the sub type can be passed and can be changed
+           s.findArea();      //RP- executes from the sub class whose object is passed
+   }
+
+}
