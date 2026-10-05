@@ -50,7 +50,7 @@ class Child2 extends Parent {
 
 e.m1()     → Example   → Hiding      → Reference
 e.m2()     → Sample    → Overriding  → Object
-e.m3(10)   → Error     → Overloading → Reference + Arguments
+e.m3(10)   → Error     → Overloading → Reference + Arguments (method signature)
 
 m1()     → Parent → Method Hiding
 m2()     → Child  → Method Overriding

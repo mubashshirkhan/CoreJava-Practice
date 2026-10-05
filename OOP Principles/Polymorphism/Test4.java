@@ -1,6 +1,6 @@
 class A
 {
-	final void m1(){
+	void m1(){
 		System.out.println("A m1");
 	}
 }
