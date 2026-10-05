@@ -1,4 +1,4 @@
-/**
+/*
  * POLYMORPHISM
  *
  * There are two types of polymorphism in Java:
@@ -29,8 +29,38 @@
  *
  * calls A's m1().
  *
- **/
- 
+ *
+ * ============================================================
+ * 2) RUN-TIME POLYMORPHISM (RTP)
+ * ============================================================
+ *
+ * When a method call is resolved at runtime based on the actual
+ * object stored in the reference variable, it is called
+ * Run-Time Polymorphism.
+ *
+ * Runtime polymorphism is achieved through method overriding.
+ *
+ * In the example below:
+ *
+ *     A a1 = new B();
+ *
+ * The reference variable is of type A, but the actual object
+ * created is of class B.
+ *
+ * Therefore:
+ *
+ *     a1.m2();
+ *
+ * executes B's overridden m2() method.
+ *
+ *
+ * IMPORTANT:
+ *
+ *     static methods  -> method hiding -> Compile-Time Polymorphism
+ *     instance methods -> method overriding -> Run-Time Polymorphism
+ */
+
+
 // ============================================================
 // EXAMPLE 1: COMPILE-TIME POLYMORPHISM
 // ============================================================
@@ -111,6 +141,64 @@ class TestCTP {
 }
 
 
+// ============================================================
+// EXAMPLE 2: RUN-TIME POLYMORPHISM
+// ============================================================
+class A1 {
+
+    // Static method
+    static void m1() {
+        System.out.println("A1 m1()");
+    }
+
+    // Instance method
+    void m2() {
+        System.out.println("A1 m2()");
+    }
+}
+
+
+class B1 extends A1 {
+
+    // Static method
+    // Method hiding
+    static void m1() {
+        System.out.println("B1 m1()");
+    }
+
+    // Method overriding
+    @Override
+    void m2() {
+        System.out.println("B1 m2()");
+    }
+}
+
+
+// ============================================================
+// TEST 2
+// ============================================================
+
+class TestRTP {
+
+    public static void main(String[] args) {
+
+        // Upcasting
+        A1 a1 = new B1();
+
+        /*
+         * Reference type = A1
+         * Object type    = B1
+         */
+
+        // Compile-Time Polymorphism
+        a1.m1();
+
+        /*
+         * Output:
+         * A1 m1()
+         *
+         * Static method is resolved using the reference type.
+         */
 
 
         // Run-Time Polymorphism

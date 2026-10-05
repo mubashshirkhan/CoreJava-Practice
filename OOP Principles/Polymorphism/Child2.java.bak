@@ -1,0 +1,59 @@
+class Parent {
+
+    // Method Hiding
+    static void m1() {
+        System.out.println("Parent m1");
+    }
+
+    // Method Overriding
+    void m2() {
+        System.out.println("Parent m2");
+    }
+
+    // Method Overloading
+    void m3() {
+        System.out.println("Parent m3");
+    }
+}
+
+class Child2 extends Parent {
+
+    // Method Hiding
+    static void m1() {
+        System.out.println("Child m1");
+    }
+
+    // Method Overriding
+    @Override
+    void m2() {
+        System.out.println("Child m2");
+    }
+
+    // Method Overloading
+    void m3(int x) {
+        System.out.println("Child m3(int)");
+    }
+
+    public static void main(String[] args) {
+
+        Parent p = new Child();
+
+        p.m1();       // Parent m1 → Hiding
+        p.m2();       // Child m2  → Overriding
+        p.m3();       // Parent m3
+
+         p.m3(31);  // ❌ Compile-time error
+    }
+}
+
+/*
+
+e.m1()     → Example   → Hiding      → Reference
+e.m2()     → Sample    → Overriding  → Object
+e.m3(10)   → Error     → Overloading → Reference + Arguments
+
+m1()     → Parent → Method Hiding
+m2()     → Child  → Method Overriding
+m3(10)   → ERROR  → Overloading not visible through Parent reference
+
+*/

@@ -1,32 +1,3 @@
-/** ============================================================
- * 2) RUN-TIME POLYMORPHISM (RTP)
- * ============================================================
- *
- * When a method call is resolved at runtime based on the actual
- * object stored in the reference variable, it is called
- * Run-Time Polymorphism.
- *
- * Runtime polymorphism is achieved through method overriding.
- *
- * In the example below:
- *
- *     A a1 = new B();
- *
- * The reference variable is of type A, but the actual object
- * created is of class B.
- *
- * Therefore:
- *
- *     a1.m2();
- *
- * executes B's overridden m2() method.
- *
- *
- * IMPORTANT:
- *
- *     static methods  -> method hiding -> Compile-Time Polymorphism
- *     instance methods -> method overriding -> Run-Time Polymorphism
- **/
 // ============================================================
 // EXAMPLE 2: RUN-TIME POLYMORPHISM
 // ============================================================
