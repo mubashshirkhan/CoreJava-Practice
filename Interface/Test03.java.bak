@@ -1,0 +1,55 @@
+interface Vehicle
+{
+	void start();
+	void stop();
+}
+class Car implements Vehicle
+{
+	public void start(){
+		
+		System.out.println("Car is started");
+	}
+	public void stop(){
+		
+		System.out.println("Car is stopped");
+	}
+}
+class Bike implements Vehicle
+{
+	public void start(){
+		
+		System.out.println("Bike is started");
+	}
+	public void stop(){
+		
+		System.out.println("Bike is stopped");
+	}
+}
+
+class Bus implements Vehicle
+{
+	public void start(){
+		
+		System.out.println("Bus is started");
+	}
+	public void stop(){
+		
+		System.out.println("Bus is stopped");
+	}
+}
+class Driver
+{
+	void drive(Vehicle v){
+		v.start();
+		v.stop();
+	}
+}
+class Test03 
+{
+	public static void main(String[] args) 
+	{
+		Driver d = new Driver();
+		 
+		d.drive(new Car());
+	}
+}

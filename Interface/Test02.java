@@ -1,9 +1,9 @@
-public class interface Shape
+interface Shape
 {
 	abstract void findArea();
 	abstract void findPerimeter();
 }
-class Rectangle impliments Shape{
+class Rectangle implements Shape{
 	
 	private double l;
 	private double b;
@@ -14,17 +14,17 @@ class Rectangle impliments Shape{
 	}
 	
 	@Override
-	void findArea(){
+	public void findArea(){
 		System.out.println("Area of Rectangle is: "+(l*b));
 	}
 	
 	@Override
-	void findPerimeter(){
+	public void findPerimeter(){
 		System.out.println("Perimeter of Rectangle is: "+ (2*(l*b)));
 	}
 }
 
-class Square impliments Shape{
+class Square implements Shape{
 	
 	private double s;
 	
@@ -34,17 +34,17 @@ class Square impliments Shape{
 	}
 	
 	@Override
-	void findArea(){
+	public void findArea(){
 		System.out.println("Area of Square is: "+(s*s));
 	}
 	
 	@Override
-	void findPerimeter(){
+	public void findPerimeter(){
 		System.out.println("Perimeter of Square is: "+ (4*s));
 	}
 }
 
-class Circle impliments Shape{
+class Circle implements Shape{
 	
 	private static final float PI = 3.14f;
 	private double r;
@@ -56,12 +56,12 @@ class Circle impliments Shape{
 	}
 	
 	@Override
-	void findArea(){
+	public void findArea(){
 		System.out.println("Area of Circle is: "+(PI*r*r));
 	}
 	
 	@Override
-	void findPerimeter(){
+	public void findPerimeter(){
 		System.out.println("Perimeter of Circle is: "+ (2 * PI *r));
 	}
 }
@@ -75,13 +75,14 @@ class Painter
 	}
 }
 
-class Test08
+class Test02
 {
 	public static void main(String[]args){
 		
 		Painter p1 = new Painter();
 		
 		p1.draw(new Rectangle(10,5));
-		
+        p1.draw(new Square(5));
+        p1.draw(new Circle(5));		
 	}
 }
