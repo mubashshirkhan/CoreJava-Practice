@@ -51,9 +51,9 @@ class Test03
 		Driver d = new Driver();
 		 
 		d.drive(new Car());
-		System.out.println("=============");
+		System.out.println("==============");
 		d.drive(new Bike());
-		System.out.println("=============");
+		System.out.println("==============");
 		d.drive(new Bus());
 	}
 }
