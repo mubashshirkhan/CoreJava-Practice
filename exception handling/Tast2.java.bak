@@ -20,10 +20,6 @@ class Tast2
 			a = scn.nextInt();
 			break;
 		}
-		catch(ArithmeticException e){
-			System.out.println("Please dont pass zero as a second value");
-			scn.nextLine();
-		}
 		catch(InputMismatchException e){
 			System.out.println("Please pass only integer values");
 			scn.nextLine();
@@ -39,9 +35,7 @@ class Tast2
 			break;
 		}
 		catch(ArithmeticException e){
-			System.out.println("Please dont pass zero as a second value");
-			
-			
+			System.out.println("Please dont pass zero as a second value");	
 		}
 		catch(InputMismatchException e){
 			System.out.println("Please pass only integer values");
