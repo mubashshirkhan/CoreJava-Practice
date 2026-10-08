@@ -1,7 +1,7 @@
 //problems in Test1.java program if we enter first value correctly and
 //entered second value wrong then it will ask every time enter two values
 
-//redevelop  above program to ask user to enter only
+//redevelop above program to ask user to enter only
 //the presnt value which is given wrong out not first value
 import java.util.*;
 

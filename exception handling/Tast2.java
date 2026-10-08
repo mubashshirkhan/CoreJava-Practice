@@ -31,7 +31,7 @@ class Tast2
 		try{
 			System.out.print("Enter Sno: ");
 			b = scn.nextInt();
-			System.out.println("Division is:"+a/b);
+			System.out.println("Division is: "+a/b);
 			break;
 		}
 		catch(ArithmeticException e){
