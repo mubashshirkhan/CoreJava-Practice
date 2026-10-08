@@ -12,7 +12,7 @@ class A
 	}
 }
 
-class B extend A{
+class B extends A{
 	
 	static int b = 20;
 	

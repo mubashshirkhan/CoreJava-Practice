@@ -22,7 +22,7 @@ class B extends A{
 	
 	public static void main(String[] args) 
 	{
-		System.out.println("B main");
+		System.out.println("Bmain");
 		System.out.println("a"+a);
 		System.out.println("b"+b);
 	}
