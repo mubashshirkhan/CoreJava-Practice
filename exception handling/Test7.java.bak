@@ -22,7 +22,7 @@ Q) How can we supress an exception throwing from a method without catching?
 */
 class  Test7 {
 	public static void main(String[] args) {
-		//System.out.println(m1());
+		System.out.println(m1());
 		m2();
 	}
 
