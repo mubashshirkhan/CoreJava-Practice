@@ -1,4 +1,3 @@
-
 /*
 24. finally with return statement
 	- inside finally if we place transfer statement 'return'
@@ -59,6 +58,5 @@ class  Test7 {
 			System.out.println("In finally");
 			return;	
 		}
-		
 	}
 }

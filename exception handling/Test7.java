@@ -14,10 +14,10 @@ Q) How can we supress an exception throwing from a method without catching?
 	- place 'return statement' in finally block
 
 	- In a void method
-		place return; 
+	  place return; 
 
 	- In a non-void method
-		place return value; 
+	  place return value; 
 */
 class  Test7 {
 	public static void main(String[] args) {
