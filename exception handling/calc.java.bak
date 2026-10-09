@@ -13,12 +13,12 @@ class  Addition
 	}
 }
 
-
 class calc{
 
 public static void main(String[]args){
 	
-	Addition.add();
-	
+	int r1 = Addition.add(10,2); System.out.println(r1);
+    int r2 = Addition.add(10,-2); //System.out.println(r2);
+
  }
-}
+} 
