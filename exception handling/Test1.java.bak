@@ -11,19 +11,19 @@ class Test1
 		Scanner scn = new Scanner(System.in);
 		while(true){
 		try{
-			System.out.print("Please enter teh first number:");
+			System.out.print("Please enter the first number: ");
 			int a = scn.nextInt();
-			System.out.print("Please enter teh Second number:");
+			System.out.print("Please enter the Second number: ");
 			int b = scn.nextInt();
 			System.out.println("The division is: "+(a/b));
 			break; 
 		}
 		catch(ArithmeticException e){
-			System.out.println("Please dont pass zero as a second value");
+			System.out.println("Error: Please dont pass zero as a second value" );
 			
 		}
 		catch(InputMismatchException e){
-			System.out.println("Please pass only integer values");
+			System.out.println("Error: Please pass only integer values ");
 			scn.nextLine();
 	  }
 	}
