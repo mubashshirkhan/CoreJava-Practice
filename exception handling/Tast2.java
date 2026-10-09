@@ -2,7 +2,7 @@
 //entered second value wrong then it will ask every time enter two values
 
 //redevelop above program to ask user to enter only
-//the presnt value which is given wrong out not first value
+//the present value which is given wrong out not first value
 import java.util.*;
 
 class Tast2 

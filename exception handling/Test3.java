@@ -1,0 +1,44 @@
+import java.util.*;
+
+class Test3 {
+    public static void main(String[] args) {
+
+        Scanner scn = new Scanner(System.in);
+		int a;
+        while (true) {
+
+            // Accept the first number
+            try {
+                System.out.print("Enter the First number: ");
+                a = scn.nextInt();
+				break;
+            }
+            catch (InputMismatchException e) {
+                System.out.println("Please enter only integer values.");
+                scn.nextLine();//removing wrong values
+            }
+		}
+		while(true){
+            // Accept the second number and perform division
+            try {
+				
+                System.out.print("Enter the Second number: ");
+				
+                int b = scn.nextInt();
+
+                int c = a / b;
+
+                System.out.println("Division is: " + c);
+                break;
+            }
+            catch (InputMismatchException e) {
+                System.out.println("Please enter only integer values.");
+                scn.nextLine();
+            }
+            catch (ArithmeticException e) {
+                System.out.println("Please don't enter zero as the divisor.");
+				//no need to remove wrong values cuz the scanner reads the 0
+            }
+		}
+    }
+}
