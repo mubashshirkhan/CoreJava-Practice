@@ -23,6 +23,7 @@ class  Test8
 	{
 		Scanner scn =  new Scanner(System.in);
 		while(true){
+			
 			try{
 			System.out.print("Enter Fno: ");
 			int a = scn.nextInt();
@@ -33,6 +34,7 @@ class  Test8
 			int c = Addition.add(a,b);
 			System.out.println("Result: "+c);
 			break;
+			
 			}
 		
 		catch(IllegalArgumentException e){
