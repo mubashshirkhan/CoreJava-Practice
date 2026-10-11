@@ -2,7 +2,7 @@ class Test09 {
 	public static void main(String[] args) {
 
 		try{
-			System.out.println(10/0);
+			System.out.println(10 / 0);
 
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -16,6 +16,6 @@ class Test09 {
 		}
 		
 		System.out.println();
-		System.out.println(10/0);
+		System.out.println(10 / 0);
 	}
 }
