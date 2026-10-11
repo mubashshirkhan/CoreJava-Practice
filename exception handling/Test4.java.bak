@@ -24,6 +24,14 @@ class  Test4
 				System.out.print("Sno: ");
 				int b = scn.nextInt();
 				System.out.println("The division is:"+a/b);
+				break;
+			}
+			catch(InputMismatchException e){
+				System.out.println("Please enter Integers only");
+				scn.nextLine();
+			}
+			catch(ArithmeticException e){
+				System.out.println("Please Dont enter zero as a divisor");
 			}
 		}
 			
