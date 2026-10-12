@@ -12,7 +12,6 @@ class Test09 {
 
 			System.out.println("=============");
 			System.out.println(e.getMessage());
-/**/
 		}
 		
 		System.out.println();
