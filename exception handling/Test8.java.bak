@@ -40,7 +40,7 @@ class  Test8
 			System.out.println("Error:"+e.getMessage());
 		  }
 		}
-		System.out.println("main ends ");
+		System.out.println("main ends");
 	}
 	
 }
