@@ -10,7 +10,7 @@ class NegativeNumberException extends Exception
 class Addition
 {
 	static int add(int a, int b)throws NegativeNumberException{
-		if(b>=0 || a>=0){
+		if(b<=0 || a<=0){
 			throw new NegativeNumberException("Do ot pass -ve number or zero");
 		}
 		int res = a + b;

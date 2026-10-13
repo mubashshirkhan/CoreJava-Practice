@@ -30,7 +30,7 @@ class Calci
 			System.out.print("Enter Sno: ");
 			int b = scn.nextInt();
 			
-			int res = Addition.add(10,20);
+			int res = Addition.add(10 , 20);
 			System.out.println("Result: "+res);
 		}
 		catch(java.util.InputMismatchException e){
