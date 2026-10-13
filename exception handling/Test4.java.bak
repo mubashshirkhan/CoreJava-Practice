@@ -27,7 +27,7 @@ class  Test4
 				break;
 			}
 			catch(InputMismatchException e){
-				System.out.println("Please enter Integers only");
+				System.out.println("Please enter Integers only ");
 				scn.nextLine();
 			}
 			catch(ArithmeticException e){
