@@ -10,7 +10,7 @@ class NegativeNumberException extends Exception
 class Addition
 {
 	static int add(int a, int b)throws NegativeNumberException{
-		if(b<=0 || b<=0){
+		if(b<=0 || a<=0){
 			throw new NegativeNumberException("Do ot pass -ve number or zero");
 		}
 		int res = a + b;
@@ -31,12 +31,12 @@ class Calci
 			int b = scn.nextInt();
 			
 			int res = Addition.add(10,20);
-			System.out.println("Rsult: "+res);
+			System.out.println("Result: "+res);
 		}
 		catch(java.util.InputMismatchException e){
 			System.out.println("Error: pass only integers");
 		}
-		catch(java.util.NegativeNumberException e){
+		catch(NegativeNumberException e){
 			System.out.println("Error: "+e.getMessage());
 		}
 	}
