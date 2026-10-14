@@ -16,6 +16,7 @@ class  Test001
 		
 	{
 		MyThread2 th1 = new MyThread2();
+		
 		Thread t1 = new Thread(th1);
 		t1.start();
 		
