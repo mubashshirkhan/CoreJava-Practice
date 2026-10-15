@@ -14,7 +14,7 @@ public class ElectricityBillProject {
 
         CustomerElectricityAccount acc3 =
                 new CustomerElectricityAccount(
-                        3001L, "Sheikh Danish", 000);
+                        3001L, "Sheikh Danish", 22000);
 
         // Display initial balances
         System.out.println("===== INITIAL BALANCES =====");
