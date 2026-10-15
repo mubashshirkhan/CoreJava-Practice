@@ -8,7 +8,7 @@ class Test1 extends Thread
 		
 		System.out.println("Main start");
 		
-		MyThread th1 = new MyThread();
+		Test1 th1 = new Test1();
 		th1.start();
 		System.out.println("Main ends");
 	}
