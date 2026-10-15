@@ -3,7 +3,7 @@ class MyThread3 implements Runnable
 	@Override
 	public void run(){
 		
-		for(int i = 20; i>=1; i++){
+		for(int i = 20; i >= 1; i++){
 			
 			System.out.println("run i: "+i);
 		}
@@ -17,7 +17,6 @@ class  Test001
 	{
 		MyThread2 th1 = new MyThread2();
 		
-		th1.run();
 		Thread t1 = new Thread(th1);
 		t1.start();
 		
