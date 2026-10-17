@@ -117,7 +117,7 @@ public class BankAccPrjWithExcMt{
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		HdfcBankAccount acc1 = new HdfcBankAccount(1234, "HK", 10000);
+		HdfcBankAccount acc1 = new HdfcBankAccount(1234, "MK", 10000);
 		HdfcBankAccount acc2 = new HdfcBankAccount(5674, "HK", 20000);
 		HdfcBankAccount acc3 = new HdfcBankAccount(8784, "HK", 30000);
 		
