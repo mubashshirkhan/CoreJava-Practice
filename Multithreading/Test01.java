@@ -12,7 +12,7 @@ class  Test01
 {
 	public static void main(String[] args) 
 	{
-		MyThread2 mt1= new MyThread2();
+		MyThread2 mt1 = new MyThread2();
 		mt1.start();
 		
 		for(int i=1; i<=20;i++){
