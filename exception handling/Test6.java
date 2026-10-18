@@ -34,7 +34,7 @@ class  Test13 {
 			
 		} finally{
 			System.out.println("In finally");
-			//if uncaught exception happened in try block then the 
+			//if   uncaught exception happened in try block then the 
 			//exception show after finally execution
 		}
 		System.out.println("After try/catch/finally");
