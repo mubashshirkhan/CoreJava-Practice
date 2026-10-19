@@ -51,6 +51,7 @@ class  Test7 {
 
 	static void m2() {
 		try{
+			
 			System.out.println("In try");
 			System.out.println(10/0);
 			
