@@ -1,0 +1,29 @@
+class MyThread25 extends Thread {
+	@Override
+	public void run() {
+		System.out.println("run start");
+		try {
+			Thread.sleep(5000);
+		}catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("run end");
+	}
+}
+
+public class Test33_join{
+	public static void main(String[] args) throws InterruptedException {
+		System.out.println("main start");
+		
+		MyThread25 mt1 = new MyThread25();
+		mt1.start();
+		
+		//mt1.join();			//pauses main thread until mt thread execution is completed
+		//mt1.join(3000);		//pauses main therad until given time is completed
+		mt1.join(10000);		//pauses main thead until mt thread is completed
+		//mt1.sleep(10000);		//pasuses main thread until given time is completed
+			
+		System.out.println("main end");
+		
+	}
+}
