@@ -24,7 +24,7 @@ class Test1
 			
 		}
 		catch(InputMismatchException e){
-			System.out.println("Error: Please pass only integer values");
+			System.out.println("Error: Please pass only integer values ");
 			scn.nextLine();
 	  }
 	}
