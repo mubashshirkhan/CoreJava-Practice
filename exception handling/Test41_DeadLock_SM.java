@@ -77,7 +77,7 @@ class SCThread extends Thread {
 	}
 }
 
-public class Test41_DeadLock_SM {
+public class Test41_DeadLock_SM{
 	public static void main(String[] args) {
 		
 		FirstClass 	fc = new FirstClass();
