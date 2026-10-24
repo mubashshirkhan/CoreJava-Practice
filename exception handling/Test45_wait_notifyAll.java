@@ -22,7 +22,7 @@ class Cbc {
 	}
 }
 
-class WaitThread1 extends Thread {
+class WaitThread1 extends Thread{
 	private Cbc cbc;
 
 	public WaitThread1(Cbc cbc) {
