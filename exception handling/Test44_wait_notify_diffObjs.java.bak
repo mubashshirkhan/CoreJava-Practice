@@ -48,7 +48,7 @@ class NotifyThread extends Thread {
 }
 
 public class Test44_wait_notify_diffObjs {
-	public static void main(String[] args) {
+	public static void main(String[] ar@2gs) {
 		//case #1 wait() and notify methods are called by using same object b1
 	/*	
 		Bbc b1 = new Bbc();
