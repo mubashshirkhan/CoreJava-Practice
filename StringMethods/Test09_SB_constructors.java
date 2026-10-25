@@ -14,7 +14,7 @@ public class Test09_SB_constructors {
 		System.out.println("sb1: "+ sb1.capacity());
 		System.out.println();
 		
-		StringBuilder sb2 = new StringBuilder(5);  //50  -50
+		StringBuilder sb2 = new StringBuilder(5);  //50-50
 		System.out.println("sb2: "+ sb2);
 		System.out.println("sb2: "+ sb2.length());
 		System.out.println("sb2: "+ sb2.capacity());
