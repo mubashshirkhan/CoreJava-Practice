@@ -3,7 +3,7 @@ class Bbc {
 		try {
 			String name = Thread.currentThread().getName();
 			
-			System.out.println(name + "is waiting for " + this + " lock");
+			System.out.println(name + " is waiting for " + this + " lock");
 				wait();
 			System.out.println(name + " after nofitying");
 		} catch (InterruptedException   e) {
