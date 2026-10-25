@@ -107,6 +107,6 @@ public class Test27_TextBlocks {
 		System.out.println();
 		
 		lines = address.lines();
-		lines.filter(line -> !line.contains("Location"))
+		lines.filter(line -> !line.contains("Location"));
 				.forEach(line -> System.out.println(line.toUpperCase()));
 
