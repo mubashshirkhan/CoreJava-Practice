@@ -14,7 +14,7 @@ class  Test01
 	{
 		MyThread2 mt1 = new MyThread2();
 		mt1.start();
-		
+		System.out.print(s1);
 		for(int i=1; i<=20;i++){
 			System.out.println("main i:"+i);
 		}
