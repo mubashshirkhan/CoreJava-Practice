@@ -48,8 +48,8 @@ public class Test09_SB_constructors {
 		System.out.println("sb4: "+ sb4.capacity());
 		System.out.println();
 		
-//		String str = new String(null); 		   //CE: a e
-//		String str = new String((String)null);  //CE: no CE, RE: NPE
+//		String	str = new String(null); 		   //CE: a e
+//		String	str = new String((String)null);  //CE: no CE, RE: NPE
 		String str = new String();
 //		str.concat(null);
 		
