@@ -1,8 +1,8 @@
 /*
- * 1. public	StringBuilder()
- * 2. public	StringBuilder(int capacity)
- * 3. public	StringBuilder(String s)
- * 4. public	StringBuilder(CharSequence sb)
+ * 1. public StringBuilder()
+ * 2. public StringBuilder(int capacity)
+ * 3. public StringBuilder(String s)
+ * 4. public StringBuilder(CharSequence sb)
  * 
  */
 public class Test09_SB_constructors {
