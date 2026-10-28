@@ -5,7 +5,7 @@ class A
 	public A(){
 		System.out.println("A Constuctor");
 	}
-	public void m2(){
+	public void m1(){
 		System.out.println("A method");
 	}
 }
