@@ -3,8 +3,8 @@
  *
  * There are two types of polymorphism in Java:
  *
- * 1)	Compile-Time Polymorphism (CTP)
- * 2)	Run-Time Polymorphism (RTP)
+ * 1) Compile-Time Polymorphism (CTP)
+ * 2) Run-Time Polymorphism (RTP)
  *
  *
  * ============================================================
