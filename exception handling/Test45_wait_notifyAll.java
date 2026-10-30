@@ -59,7 +59,6 @@ public class Test45_wait_notifyAll {
 		new WaitThread1(c1).start();
 		
 		Thread.sleep(5000);
-		
 		new NotifyAllThread(c1).start();
 		
 	}
