@@ -54,6 +54,7 @@ public class Test45_wait_notifyAll {
 
 		Cbc c1 = new Cbc();
 		
+		
 		new WaitThread1(c1).start();
 		new WaitThread1(c1).start();
 		new WaitThread1(c1).start();
