@@ -110,10 +110,6 @@ class TestCTP {
          */
     }
 }
-
-
-
-
         // Run-Time Polymorphism
         a1.m2();
         /*
