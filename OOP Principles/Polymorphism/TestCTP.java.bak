@@ -112,6 +112,7 @@ class TestCTP {
 }
         // Run-Time Polymorphism
         a1.m2();
+		
         /*
          * Output:
          * B1 m2()
