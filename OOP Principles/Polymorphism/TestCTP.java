@@ -14,7 +14,7 @@
  * When a method call is resolved by the compiler based on the
  * reference variable's class, it is called Compile-Time Polymorphism.
  *
- * Static methods are resolved at compile time.
+ * Static methods	are resolved at compile time.
  *
  * In the example below:
  *
