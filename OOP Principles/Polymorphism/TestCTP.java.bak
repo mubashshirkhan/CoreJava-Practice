@@ -18,6 +18,7 @@
  *
  * In the example below:
  *
+ *
  *     A a1 = new B();
  *
  * The reference variable is of type A, so the compiler looks
