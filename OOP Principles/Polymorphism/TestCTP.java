@@ -125,7 +125,6 @@ class TestCTP {
          *
          * At runtime, JVM checks the actual object:
          *
-		 *
          *     new B1()
          *
          * Therefore B1's m2() is executed.
