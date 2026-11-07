@@ -95,6 +95,7 @@ class TestCTP {
          * m1() is static.
          * Static methods are resolved using the reference type.
          *
+		 *
          * Reference type = A
          * Therefore A's m1() is called.
          */

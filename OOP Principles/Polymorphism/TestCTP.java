@@ -6,7 +6,6 @@
  * 1) Compile-Time Polymorphism (CTP)
  * 2) Run-Time Polymorphism (RTP)
  *
- *
  * ============================================================
  * 1) COMPILE-TIME POLYMORPHISM (CTP)
  * ============================================================
