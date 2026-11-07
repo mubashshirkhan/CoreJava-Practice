@@ -124,7 +124,6 @@ class TestCTP {
          * m2() is an instance method and is overridden in B1.
          *
          * At runtime, JVM checks the actual object:
-         *
          *     new B1()
          *
          * Therefore B1's m2() is executed.
