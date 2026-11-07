@@ -127,7 +127,6 @@ class TestCTP {
          *
          *     new B1()
          *
-		 
          * Therefore B1's m2() is executed.
          */
     }
