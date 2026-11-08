@@ -17,7 +17,6 @@
  *
  * In the example below:
  *
- *
  *     A a1 = new B();
  *
  *
