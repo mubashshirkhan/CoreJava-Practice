@@ -22,6 +22,11 @@
  *
  *
  *
+ 
+ 
+ 
+ 
+ 
  * The reference variable is of type A, so the compiler looks
  * at class A while resolving the static method m1().
  *
