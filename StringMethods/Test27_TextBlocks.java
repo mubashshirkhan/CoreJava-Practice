@@ -6,6 +6,7 @@ public class Test27_TextBlocks {
 		
 		String s1 = " one line text ";
 
+
 		/*
 		String address =
 				"Door num: 123,
