@@ -1,10 +1,10 @@
 /*
  * String class have 15 constructors 
  * among them 8 constructors are important
- * 	1. public	String()
- * 	2. public	String(String s) 
- * 	3. public	String(StringBuffer sb) 
- * 	4. public S	tring(StringBuilder sb) 
+ * 	1. public String()
+ * 	2. public String(String s) 
+ * 	3. public String(StringBuffer sb) 
+ * 	4. public String(StringBuilder sb) 
  * 	5. public String(char[] ca) 
  * 	6. public String(byte[] ba) 
  * 	7. public String(char[] ca, int offset, int count) 
