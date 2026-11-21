@@ -60,6 +60,7 @@ public class Test05_String_Constructors {
 		System.out.println("s15: "+ s15);
 		//System.out.println("s15: "+ s15.toUpperCase()); //RE: NPE
 		
-		/**/
+		/*
+		*/
 	}
 }
