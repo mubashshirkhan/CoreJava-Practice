@@ -12,8 +12,9 @@ class A
 class B extends A
 {
 	public B(){
-	super();
+		
 	}
+
 }
 class  Test12
 {
