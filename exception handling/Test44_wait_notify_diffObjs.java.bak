@@ -56,6 +56,7 @@ public class Test44_wait_notify_diffObjs {
 		new WaitThread(b1).start();
 		new NotifyThread(b1).start();
 		
+		
 	*/	
 		Bbc b1 = new Bbc();
 		Bbc b2 = new Bbc();
