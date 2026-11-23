@@ -93,7 +93,6 @@ public class Test04_StringHandling_methods {
 		String s2 = " ";	
 		String s3 = "\0";
 		String s4 = "a";
-		
 
 //#1: finding empty or not
 		System.out.println(s1.isEmpty() + " " + s2.isEmpty() + " " + s3.isEmpty() + " " + s4.isEmpty());
