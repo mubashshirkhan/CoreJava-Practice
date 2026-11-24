@@ -1,0 +1,38 @@
+class A
+{
+	public void m1(){
+		
+		System.out.println("From A m1");
+	}
+	public static void m2(){
+		
+		System.out.println("From A m2");
+	}
+}
+class B extends A
+{
+	public void m1(){
+		
+		System.out.println("From B m1");
+	}
+	public static void m2(){
+		
+		System.out.println("From B m2");
+	}
+	public void m3(){
+		
+		System.out.println("From B m1");
+	}
+}
+
+
+class Program01 
+{
+	public static void main(String[] args) 
+	{
+		A a = new B();
+		a.m1();
+		a.m2();
+		a.m3();
+	}
+}
