@@ -102,6 +102,7 @@ public class Test04_StringHandling_methods {
 
 
 //#1: finding empty or not
+
 		System.out.println(s1.isEmpty() + " " + s2.isEmpty() + " " + s3.isEmpty() + " " + s4.isEmpty());
 		
 //#2: finding is blank or not [either empty or spaces or \t or \s]		
